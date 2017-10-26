@@ -1,0 +1,30 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+		http://www.springframework.org/schema/beans/spring-beans-3.2.xsd 
+		http://www.springframework.org/schema/mvc 
+		http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd 
+		http://www.springframework.org/schema/context 
+		http://www.springframework.org/schema/context/spring-context-3.2.xsd 
+		http://www.springframework.org/schema/aop 
+		http://www.springframework.org/schema/aop/spring-aop-3.2.xsd 
+		http://www.springframework.org/schema/tx 
+		http://www.springframework.org/schema/tx/spring-tx-3.2.xsd ">
+	<!--分类服务 -->
+	<bean id="categoryService" class="com.wust.boyaBookStore.service.impl.CategoryServiceImpl"></bean>
+	<!--用户服务 -->
+	<bean id="userService" class="com.wust.boyaBookStore.service.impl.UserServiceImpl"></bean>
+	<!--管理员服务 -->
+	<bean id="adminService" class="com.wust.boyaBookStore.service.impl.AdminServiceImpl"></bean>
+	<!--购物车服务 -->
+	<bean id="cartService" class="com.wust.boyaBookStore.service.impl.CartServiceImpl"></bean>
+	<!--订单服务 -->
+	<bean id="orderService" class="com.wust.boyaBookStore.service.impl.OrderServiceImpl"></bean>
+	<!--书籍服务 -->
+	<bean id="bookService" class="com.wust.boyaBookStore.service.impl.BookServiceImpl"></bean>
+	<!--商品评价服务  -->
+	<bean id="commentService" class="com.wust.boyaBookStore.service.impl.CommentServiceImpl"></bean>
+	
+</beans>
